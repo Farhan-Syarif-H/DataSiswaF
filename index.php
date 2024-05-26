@@ -53,7 +53,7 @@ if (isset($_GET['hapus'])) {
     }
 .output{
     background-color:white;
-    width: 250px;
+    width: 400px;
     border-radius:6px;
     box-shadow: 2px 2px 2px 0px; 
 }

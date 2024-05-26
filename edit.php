@@ -30,24 +30,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($key)) {
     <style>
         a {
             text-decoration:none;
-            background-color:wheat;
+            background-color:cyan;
             padding-top:3px;
-            padding-bottom:5px;
-            padding-right:7px;
-            padding-left:7px;
-            border-radius:10px;
+            padding-bottom:3px;
+            padding-right:8px;
+            padding-left:8px;
+            border-radius:7px;
         
         }
-            
         
 
         body{
-            background-color:wheat;
+            background-image: url("imagespb2.jpg");
         }
 
         .tengah{
             margin-top:17rem;
-            background-color:cyan;
+            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+        opacity: 0.9;
             width:400px;
             margin-left:600px;
             border-radius:9px;
