@@ -128,6 +128,7 @@ H1 {
                                     $rayon = $value["rayon"];
                                     echo ucwords("<br><h4> $nama | $nis | $rayon</h4>");
                                     echo "<a href='?hapus=" . $key . "' class=\"hapus\"><i class='hapus'></i> Hapus </a>";
+                                    echo "||";
                                     echo "<a href='edit.php?key=" . $key . "' class=\"edit\"><i class='bx bx-pencil'></i>    Edit</a><br>";
                                     echo "<br>";
                                 }
