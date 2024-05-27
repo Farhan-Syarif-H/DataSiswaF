@@ -75,11 +75,28 @@ H1 {
     text-align:center;
 }
 
+.hapus {
+    color:red;
+}
+
+.edit {
+    color:green;
+}
+
+.tengah{
+    background-color:white;
+    width:400px;
+    box-shadow: 2px 2px 2px 0px; 
+    margin-bottom:1rem;
+}
+
+
 
 
 </style>
-<div class="semua">
+
     <h1>DATA SISWA</h1>
+    <div class ="tengah">
     <form action="" method = "POST">
     <label for="nama">Nama : </label><br>
 
@@ -96,6 +113,7 @@ H1 {
     <div>
         <button name = "tambah">Tambah</button>
         <button name= "reser"><a href="destroy.php">Reset</a></button>
+        <br></br>
     </div>
 
     </form>
@@ -108,9 +126,9 @@ H1 {
                                     $nama = $value["nama"];
                                     $nis = $value["nis"];
                                     $rayon = $value["rayon"];
-                                    echo ucwords("<h4> $nama | $nis | $rayon</h4>");
-                                    echo "<a href='?hapus=" . $key . "' class=\"btn btn-danger ms-2 mt-2\"><i class='hapus'></i> Hapus</a>";
-                                    echo "<a href='edit.php?key=" . $key . "' class=\"btn btn-primary ms-2 mt-2\"><i class='bx bx-pencil'></i> Edit</a>";
+                                    echo ucwords("<br><h4> $nama | $nis | $rayon</h4>");
+                                    echo "<a href='?hapus=" . $key . "' class=\"hapus\"><i class='hapus'></i> Hapus </a>";
+                                    echo "<a href='edit.php?key=" . $key . "' class=\"edit\"><i class='bx bx-pencil'></i>    Edit</a><br>";
                                     echo "<br>";
                                 }
                             }
